@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id = "a" placeholder="Nhập vào số a"></label>
+<label><input type="text" id = "b" placeholder="Nhập vào số b"></label><br>
+<button type="button" onclick="cauc()"><i>Câu c</i></button>
+<p id="resulta"></p>
+<script>
+  function cauc() {
+
+    let a = parseFloat(document.getElementById("a").value);
+    let b = parseFloat(document.getElementById("b").value);
+    let sum = 0;
+    for (let i = a; i <= b; i++) {
+      sum += i;
+    }
+    document.getElementById("resulta").innerHTML = "Tổng các số từ a đến b là: " + sum;
+  }
+</script>
+</body>
+</html>

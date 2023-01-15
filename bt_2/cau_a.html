@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id = "a" placeholder="Nhập vào số a"></label><br>
+<button type="button" onclick="caua()"><i>Câu a</i></button>
+<p id="resulta"></p>
+<script>
+  function caua() {
+    let a = parseFloat(document.getElementById("a").value);
+    let p = a * 4;
+    let s = a * a;
+    document.getElementById("resulta").innerHTML = "Chu vi hình vuông là: " + p + "<br>" + "Diện tích hình vuông là: " + s;
+  }
+</script>
+</body>
+</html>

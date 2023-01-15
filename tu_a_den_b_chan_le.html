@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<script>
+let a = +prompt("so a")
+let b = +prompt("so b")
+for (let i=a;i<=b;i++)
+{
+  if (i % 2 === 0) {
+    document.getElementById("inra").innerHTML += "<h1>" + i + "</h1>";
+  } else {
+    document.getElementById("inra").innerHTML += "<h2>" + i + "</h2>";
+  }
+}
+</script>
+</body>
+</html>

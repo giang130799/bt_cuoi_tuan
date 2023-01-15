@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id = "a" placeholder="Nhập vào số a"></label>
+<button type="button" onclick="caud()"><i>Câu d</i></button>
+<p id="resulta"></p>
+<script>
+  function caud() {
+    let a = parseInt(document.getElementById("a").value);
+    let c = parseInt((a / 100) + 1);
+    let d = parseInt(a / 100);
+    if (a % 100 === 0) {
+      document.getElementById("resulta").innerHTML = "Thế kỷ của năm " + a + " là thế kỷ: " + d;
+    } else {
+      document.getElementById("resulta").innerHTML = "Thế kỷ của năm " + a + " là thế kỷ: " + c;
+    }
+  }
+</script>
+</body>
+</html>

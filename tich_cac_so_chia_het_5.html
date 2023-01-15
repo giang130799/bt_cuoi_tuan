@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<script>
+  let a = +prompt("so a")
+  let b = +prompt("so b")
+  let multi = 1;
+  for (let i=a;i<=b;i++){
+    if (i%5===0){
+      multi = multi * i
+      document.getElementById("inra").innerHTML = "Tich các số chia hết 5 trong dãy là: " + multi;
+    }
+  }
+
+    </script>
+</body>
+</html>
